@@ -1,0 +1,403 @@
+/* General styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  padding: 0;
+  color: #555;
+  position: relative;
+  width: 100%;
+}
+* {
+  box-sizing: border-box;
+}
+
+html {
+  width: 100%;
+}
+
+.title {
+  font-size: 70px;
+  color: #000000;
+}
+
+.hr {
+  border: 3px solid #333;
+  border-radius: 5px;
+  margin: 0;
+}
+.h2 {
+  color: #333;
+  font-size: x-large !important;
+}
+
+.p {
+  font-size: large;
+  color: #555;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: gray;
+  padding: 0 50px;
+  height: 80px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 99;
+}
+
+.mobile-nav > div {
+  width: 30px;
+  background-color: white;
+  height: 3px;
+  margin-bottom: 5px;
+  display: none;
+}
+
+.logo-container {
+  position: relative;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.logo {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.logo-text {
+  font-size: 24px;
+  font-weight: bold;
+  color: #020202;
+}
+
+.div-nav a {
+  color: white;
+  padding: 14px 20px;
+  text-decoration: none;
+  font-weight: 100;
+  font-size: 18px;
+  transition: 0.5s;
+}
+
+.div-nav a:hover {
+  color: white;
+  background-color: orange;
+  border-radius: 10px;
+}
+
+/*pic Section */
+.pic-background {
+  background-image: url("Image/homepage.jpg");
+  background-size: cover;
+  height: 75vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3px;
+  margin-top: 30px;
+}
+
+.pic-text {
+  text-align: center;
+  color: white;
+  font-size: 50px;
+}
+
+.pic-text h2 {
+  margin: 0;
+}
+
+.pic-text p {
+  margin: 10px 0;
+}
+
+/* Info Section */
+.info-text-container {
+  text-align: center;
+  margin-top: 30px;
+  padding: 50px 0;
+  background: linear-gradient(
+    to right,
+    cyan 10%,
+    rgb(98, 0, 190) 60%,
+    black 100%
+  );
+}
+
+.info-text-h1 {
+  font-size: 60px !important;
+  font-weight: bolder;
+  color: #000000;
+  font-family: Verdana, Geneva, Tahoma, sans-serif !important;
+  margin: 60px 0 !important;
+  width: 100%;
+  text-align: center;
+}
+
+.info-text:nth-of-type(1) {
+  font-size: 40px;
+  /* color: #000000; */
+}
+
+.info-text {
+  font-size: 25px;
+  color: white !important;
+}
+
+/* Image Section */
+.image-section {
+  /* float: inherit; */
+  height: 400px;
+  padding: 0;
+  /* border: 3px solid whitesmoke; */
+  box-shadow: 0 0px 5px 1px rgba(0, 0, 0, 0.2);
+  padding: 0;
+  /* border-radius: 11px; */
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: row wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 70px;
+}
+
+.image-container {
+  height: 100%;
+  width: 100%;
+}
+
+.img-sec {
+  /* display: block; */
+  margin-top: 3px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* Footer Section */
+footer {
+  background-color: #808080;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+
+/* SERVICES PAGE*/
+
+/* Divider */
+#services-section {
+  margin-top: 10vh;
+  text-align: center;
+  padding-top: 10vh;
+}
+
+.cards-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin: 50px auto;
+  overflow: hidden;
+}
+
+.service-card {
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  border: 1px solid gray;
+  border-radius: 20px;
+  width: 80%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.card-title {
+  font-size: 30px;
+  align-self: flex-end;
+  padding: 10px 0;
+}
+
+.card-content {
+  padding: 10px 20px;
+}
+
+.service-image {
+  height: 300px;
+  grid-row: 1/3;
+  border-radius: 13px;
+  overflow: hidden;
+}
+
+.service-image > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.all-service-image-container {
+  width: 100%;
+  height: 550px;
+  margin-top: 50px;
+}
+
+#h3-d {
+  margin: 0;
+  font-size: x-large;
+  color: #555;
+  font-size: 25px;
+  text-align: left;
+}
+
+.h3-d {
+  color: #3c0090;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.divider {
+  border: 3px solid #333;
+  border-radius: 5px;
+  margin: 0;
+}
+
+/* Services Section */
+.services-section {
+  padding: 20px;
+  text-align: center;
+}
+
+.service-container {
+  display: inline-block;
+  text-align: left;
+  margin-top: 20px;
+}
+
+.service-box {
+  border: 1px solid #ddd;
+  padding: 15px;
+  margin: 50px;
+  width: 600px;
+  background-color: white;
+}
+
+.servbox-h3 {
+  margin-top: 0;
+  color: #007bff;
+}
+
+li serv {
+  font-size: large;
+}
+
+/* Feedback Button */
+.feedback-btn {
+  color: rgb(8, 8, 8);
+  padding: 14px 20px;
+  text-decoration: none;
+  font-weight: 100;
+  font-size: 14px;
+  background-color: #83da83;
+  color: #ffffff;
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: white;
+  padding: 50px;
+  text-align: center;
+  border-radius: 0;
+}
+
+.all-services-card-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.all-service-card {
+  border: 1px solid black;
+  border-radius: 20px;
+  width: max-content;
+  padding: 50px 40px 30px 40px;
+  height: max-content;
+}
+
+.all-service-card > div {
+  display: none;
+}
+
+.all-service-card:hover {
+  background-color: lightgray;
+}
+
+.all-service-card:hover > div {
+  display: block;
+}
+
+#feedback {
+  padding: 14px 20px;
+  text-decoration: none;
+  font-weight: 100;
+  font-size: 14px;
+  background-color: #83da83;
+  color: #ffffff;
+}
+
+footer > p > a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+
+@media screen and (max-width: 425px) {
+  .div-nav {
+    position: absolute;
+    top: 80px;
+    right: 0;
+    background-color: gray;
+    display: none;
+    flex-direction: column;
+    height: max-content;
+    padding: 10px;
+  }
+
+  .div-nav > a:hover {
+    background-color: #dfdfdf;
+  }
+
+  .mobile-nav > div {
+    display: block;
+  }
+
+  .show {
+    display: flex;
+  }
+
+  .service-card{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .title{
+    font-size: 30px;
+  }
+}
