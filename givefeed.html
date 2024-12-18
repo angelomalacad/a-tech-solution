@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback</title>
+    <link rel="stylesheet" href="givefeed.css">
+</head>
+<body>
+    <div class="feedback-container">
+        <h2 class="feedback-title">Feedback Form</h2>
+        <p class="feedback-description">We appreciate your feedback to improve our service.</p>
+        
+        <form action="#" method="post" class="feedback-form">
+            <label for="name" class="feedback-label">Name:</label>
+            <input type="text" id="name" name="name" class="feedback-input" placeholder="Your full name">
+    
+            <label for="email" class="feedback-label">Email:</label>
+            <input type="email" id="email" name="email" class="feedback-input" placeholder="Your email address">
+    
+            <label for="rating" class="feedback-label">Rate Us:</label>
+            <select id="rating" name="rating" class="feedback-select">
+                <option value="Excellent">Excellent</option>
+                <option value="Good">Good</option>
+                <option value="Average">Average</option>
+                <option value="Poor">Poor</option>  
+            </select>
+    
+            <label for="feedback" class="feedback-label">Feedback:</label>
+            <textarea id="feedback" name="feedback" rows="4" class="feedback-textarea" placeholder="Write your feedback here"></textarea>
+         
+            <a href="thanks.html">
+                <input type="button" class="submit-button" name="Submit" value="Submit">
+            </a>
+        </form>
+    </div>
+</body>
+</html>
