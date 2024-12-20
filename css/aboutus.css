@@ -46,7 +46,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-image: url(Image/bg.jpeg);
+    background-image: url(../images/bg.jpeg);
     background-attachment: fixed;
     color: rgb(0, 0, 0); 
 }
