@@ -260,13 +260,14 @@ img {
   color: #000000;
   margin-top: 5px;
   font-weight: bold;
+  margin-bottom: 10px;
 }
 
 p {
-  font-size: 20px;
+  font-size: 16px;
   line-height: 1.6;
   color: #000000;
-  margin-top: 10px;
+  /* margin-top: 10px; */
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -505,49 +506,127 @@ footer > p > a {
   color: #ffffff;
 }
 
-.about-us{
-    width: 90%;
-    max-width: 81rem;
-    margin: 100px auto;
-    text-align: center;
+.about-us {
+  height: max-content;
+  width: 90%;
+  max-width: 81rem;
+  margin: 200px auto;
+  text-align: center;
 }
 
-.why{
-    display: flex;
-    margin-top: 50px;
+.why {
+  display: flex;
+  margin-top: 50px;
 }
 
-.why-title{
-    width: 50%;
-    font-size: 100px;
-    text-align: right;
-    margin-right: 50px;
-    font-weight: 800;
-    line-height: 90px;
+.why-title {
+  width: 50%;
+  font-size: 70px;
+  text-align: right;
+  margin-right: 50px;
+  font-weight: 800;
+  line-height: 90px;
 }
 
-.why-list{
-    width: 50%;    
-    text-align: left;
-    color: white;
-    display: flex;
+.why-list {
+  width: 50%;
+  text-align: left;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.why-list > ul {
+  list-style-type: none;
+}
+.why-list > ul > li {
+  background-color: black;
+  border-bottom: 10px solid white;
+  font-size: 26px;
+  padding: 10px 10px;
+}
+
+.why-list > ul > li:hover {
+  background-color: #ff9800;
+}
+
+.contact-us {
+  width: 90%;
+  max-width: 81rem;
+  margin: 200px auto;
+  display: flex;
+  gap: 20px;
+  overflow: hidden;
+}
+
+.contact-info {
+  width: 50%;
+}
+.contact-info > div {
+  background-color: black;
+}
+
+.contact-info > div > p {
+  color: white;
+  padding: 10px;
+}
+
+.contact-socials {
+  background-color: #000;
+  color: white;
+  margin-top: 30px;
+  padding: 10px;
+}
+
+.contact-socials > div {
+  margin-top: 20px;
+}
+
+.location {
+  width: 50%;
+}
+
+/* tablet size */
+@media screen and (max-width: 1105px) {
+  .why, .intro > div, .contact-us {
     flex-direction: column;
+  }
+
+  .why-title {
+    width: 100%;
+    text-align: center;
+    font-size: 50px;
+    line-height: 50px;
+    margin-bottom: 20px;
+    margin-right: 0;
+  }
+  .why-list {
+    width: 100%;
+    text-align: center;
+  }
+
+  .contact-info,
+  .location,
+  .intro1-left,
+  .img1,
+  .text-content {
+    width: 100%;
+  }
+
+  .x-large{
+    font-size: 40px;
+  }
+
+  .large{
+    font-size: 30px;
+  }
+
+  .small, p, li{
+    font-size: 14px;
+  }
 }
 
-.why-list > ul{
-    list-style-type: none;
-}
-.why-list > ul > li{
-    background-color: black;
-    border-bottom: 10px solid white;
-    font-size: 26px;
-    padding: 10px 10px;
-}
-
-.why-list > ul > li:hover{
-    background-color: #ff9800;
-}
-
+/* mobile size */
 @media screen and (max-width: 425px) {
   .div-nav {
     position: absolute;
@@ -591,7 +670,7 @@ footer > p > a {
     width: 80%;
   }
 
-  p {
+  p, .small, li {
     font-size: 12px !important;
   }
 
@@ -602,5 +681,22 @@ footer > p > a {
 
   #h3-d {
     font-size: 12px;
+  }
+
+  .x-large{
+    font-size: 30px;
+  }
+
+  .large{
+    font-size: 20px;
+  }
+
+  .home-title{
+    font-size: 30px;
+  }
+
+  .why-title{
+    font-size: 25px;
+    line-height: 25px;
   }
 }
