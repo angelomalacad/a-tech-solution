@@ -7,10 +7,6 @@
 }
 
 body {
-  background-image: url(./images/bghome.png);
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center;
   font-family: Arial, sans-serif;
 }
 
