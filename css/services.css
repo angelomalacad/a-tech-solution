@@ -202,7 +202,7 @@ footer {
 /* SERVICES PAGE*/
 
 /* Divider */
-#services-section {
+#services {
   margin-top: 10vh;
   text-align: center;
   padding-top: 10vh;
@@ -397,7 +397,34 @@ footer > p > a {
     flex-direction: column;
   }
 
+  .service-image{
+    height: 150px;
+  }
+
+  .all-service-image-container {
+    height: 150px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+  }
+
+  .all-service-card{
+    width: 80%;
+  }
+
   .title{
     font-size: 30px;
+  }
+
+  p{
+    font-size: 12px !important;
+  }
+
+  h3{
+    font-size: 14px !important;
+    margin: 0 auto;
+  }
+
+  #h3-d{
+    font-size: 12px;
   }
 }
