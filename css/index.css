@@ -405,16 +405,6 @@ li serv {
   font-size: large;
 }
 
-/* Feedback Button */
-.feedback-btn {
-  color: rgb(8, 8, 8);
-  padding: 14px 20px;
-  text-decoration: none;
-  font-weight: 100;
-  font-size: 14px;
-  background-color: #83da83;
-  color: #ffffff;
-}
 
 /* Footer */
 footer {
@@ -493,12 +483,18 @@ footer::before {
   display: block;
 }
 
+.feedback-container{
+    width: 100%;
+    position: relative;
+    padding: 0;
+    margin-bottom: 100px;
+}
 #feedback {
   padding: 14px 20px;
   text-decoration: none;
   font-weight: 100;
   font-size: 14px;
-  background-color: #83da83;
+  background-color: #ff9800;
   color: #ffffff;
 }
 
@@ -549,7 +545,7 @@ footer::before {
 .contact-us {
   width: 90%;
   max-width: 81rem;
-  margin: 200px auto;
+  margin: 200px auto 100px auto;
   display: flex;
   gap: 20px;
   overflow: hidden;
